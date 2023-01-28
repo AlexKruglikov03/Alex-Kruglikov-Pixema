@@ -1,0 +1,152 @@
+@import '/src/constants/_colors.scss';
+@import '/src/constants/_fonts.scss';
+
+
+.header{
+  padding-top: 40px;
+  background-color: $_BLACK;
+
+  .header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo{
+    width: 158px;
+    height: 40px;
+    margin: 8px 15px 2px 2px;
+    
+      & img{
+        width: 158px;
+        height: 100%;
+      }
+  }
+
+  //Search line//
+  .search__form{
+    width: 1186px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 40px;
+
+    .search__input{
+      outline: 0;
+      width: 100%;
+      height: 100%;
+      padding: 16px 51px 16px 20px;
+      border-radius: 10px;
+      border: 2px solid $_GRAPHITE;
+      font-family: 'Exo 2', 'sans-serif';
+      font-size: $_16px;
+      background-color: $_GRAPHITE;
+      color: $_SECONDARY;
+
+        &:focus{
+          color: $_WHITE;
+          border: 2px solid $_PRIMARY;
+        }
+        &:active{
+          color: $_WHITE
+        }
+    }
+
+
+    //Filter button//
+    .filter{
+      width: 51px;
+      height: 51px;
+      background-color: $_GRAPHITE;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+      position: relative;
+      position: absolute;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 18px;
+      right: 3px;
+      
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 18px;
+        width: 16px;
+        height: 2px;
+        background-color: $_LIGHT;
+        border-radius: 1px;
+      }
+
+      & span{
+        height: 2px;
+        width: 10px;
+        background-color: $_LIGHT;
+        border-radius: 1px;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 18px;
+        width: 6px;
+        height: 2px;
+        background-color: $_LIGHT;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  .user__wrap{
+    max-width: 267px;
+    min-width: 264px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+    svg{
+      path{
+        stroke: $_WHITE;
+      }
+    }
+
+    &:hover{
+      span{
+        transition: 0.2s;
+        color: $_LIGHT;
+      }
+      svg{
+        path{
+          transition: 0.2s;
+          stroke: $_LIGHT;
+        }
+      }
+    }
+
+    .user__menu{
+      font-family: 'Exo 2', 'sans-serif';
+      font-size: $_16px;
+      color: $_WHITE;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .user__logo{
+        width: 56px;
+        height: 56px;
+        border-radius: 10px;
+        background-color: $_PRIMARY;
+        align-items:center;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+      }
+    }
+  }
+}

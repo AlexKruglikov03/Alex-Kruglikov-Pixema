@@ -5,6 +5,7 @@
 .header{
   padding-top: 40px;
   background-color: $_BLACK;
+  margin-bottom: 56px;
 
   .header__container{
     display: flex;
@@ -15,7 +16,7 @@
   .logo{
     width: 158px;
     height: 40px;
-    margin: 8px 15px 2px 2px;
+    margin: 8px 146px 2px 2px;
     
       & img{
         width: 158px;
@@ -40,7 +41,6 @@
       padding: 16px 51px 16px 20px;
       border-radius: 10px;
       border: 2px solid $_GRAPHITE;
-      font-family: 'Exo 2', 'sans-serif';
       font-size: $_16px;
       background-color: $_GRAPHITE;
       color: $_SECONDARY;
@@ -129,7 +129,6 @@
     }
 
     .user__menu{
-      font-family: 'Exo 2', 'sans-serif';
       font-size: $_16px;
       color: $_WHITE;
       font-weight: 600;

@@ -1,19 +1,13 @@
-import {  fetchMovies, useAppDispatch } from "appSlices/movie.slice"
-import MovieCardList from "components/MovieCardList/MovieCardList"
-import { useEffect, useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { IStore } from "store/store"
+import FiltersSideBar from 'components/FiltersSideBar/FiltersSideBar';
+import MovieCardList from 'components/MovieCardList/MovieCardList';
 
-const Home = () =>{
-  
+const Home = () => {
+	return (
+		<>
+			<MovieCardList listType="Home" />
+			<FiltersSideBar />
+		</>
+	);
+};
 
-  return(
-    <>
-    <MovieCardList listType='Home' />
-    {/* <div className="loadMore" onClick={() => {setPage(page+1)}}>Load more</div>
-    {pending ? <div>Loading...</div> : ''} */}
-    </>
-  )
-}
-
-export default Home
+export default Home;

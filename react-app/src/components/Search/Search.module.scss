@@ -1,77 +1,75 @@
 @import '/src/constants/_colors.scss';
 @import '/src/constants/_fonts.scss';
 
-.search__form{
-  width: 1186px;
-  height: 56px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-right: 40px;
+.search__form {
+	width: 1186px;
+	height: 56px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-right: 40px;
 
-  .search__input{
-    outline: 0;
-    width: 100%;
-    height: 100%;
-    padding: 16px 51px 16px 20px;
-    border-radius: 10px;
-    border: 2px solid $_GRAPHITE;
-    font-size: $_16px;
-    background-color: $_GRAPHITE;
-    color: $_SECONDARY;
+	.search__input {
+		outline: 0;
+		width: 100%;
+		height: 100%;
+		padding: 16px 51px 16px 20px;
+		border-radius: 10px;
+		border: 2px solid $_GRAPHITE;
+		font-size: $_16px;
+		background-color: $_GRAPHITE;
+		color: $_SECONDARY;
 
-      &:focus{
-        color: $_WHITE;
-        border: 2px solid $_PRIMARY;
-      }
-      &:active{
-        color: $_WHITE
-      }
-  }
+		&:focus {
+			color: $_WHITE;
+			border: 2px solid $_PRIMARY;
+		}
+		&:active {
+			color: $_WHITE;
+		}
+	}
 
+	//Filter button//
+	.filter {
+		width: 51px;
+		height: 51px;
+		background-color: $_GRAPHITE;
+		border-radius: 0 10px 10px 0;
+		cursor: pointer;
+		position: relative;
+		position: absolute;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		padding: 18px;
+		right: 3px;
 
-  //Filter button//
-  .filter{
-    width: 51px;
-    height: 51px;
-    background-color: $_GRAPHITE;
-    border-radius: 0 10px 10px 0;
-    cursor: pointer;
-    position: relative;
-    position: absolute;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 18px;
-    right: 3px;
-    
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			width: 16px;
+			height: 2px;
+			background-color: $_LIGHT;
+			border-radius: 1px;
+		}
 
-    &::before{
-      content: '';
-      position: absolute;
-      top: 18px;
-      width: 16px;
-      height: 2px;
-      background-color: $_LIGHT;
-      border-radius: 1px;
-    }
+		& span {
+			height: 2px;
+			width: 10px;
+			background-color: $_LIGHT;
+			border-radius: 1px;
+		}
 
-    & span{
-      height: 2px;
-      width: 10px;
-      background-color: $_LIGHT;
-      border-radius: 1px;
-    }
-
-    &::after{
-      content: '';
-      position: absolute;
-      bottom: 18px;
-      width: 6px;
-      height: 2px;
-      background-color: $_LIGHT;
-      border-radius: 1px;
-    }
-  }
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 18px;
+			width: 6px;
+			height: 2px;
+			background-color: $_LIGHT;
+			border-radius: 1px;
+		}
+	}
 }

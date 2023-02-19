@@ -1,9 +1,9 @@
-import { useAppDispatch } from 'appSlices/movie.slice';
-import { useSearchParams } from 'react-router-dom';
-import styles from '../Search/Search.module.scss';
-import { clearStore } from 'appSlices/movie.slice';
-import { useDebounce } from 'utils/utils';
 import { useCallback, useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { openFilterSideBar } from 'appSlices/appState.slice';
+import { useAppDispatch, clearStore } from 'appSlices/movie.slice';
+import { useDebounce } from 'utils/utils';
+import styles from './Search.module.scss';
 
 interface ISearchProps {
 	className: string;
@@ -25,10 +25,17 @@ const Search: React.FC<Partial<ISearchProps>> = ({
 		setQuery(target.value);
 	};
 
+	const openFiltersSideBarOnClickEventHandler = () => {
+		dispatch(openFilterSideBar());
+	};
+
 	const updateStore = (query: string) => {
-		if (query !== searchParams.get('title')) {
+		if (query !== (searchParams.get('title') ?? '')) {
 			dispatch(clearStore());
-			setSearchParams({ title: query });
+			if (!query) {
+				searchParams.delete('title');
+			} else searchParams.set('title', query);
+			setSearchParams(searchParams);
 		}
 	};
 	const debouncedUpdateStore = useCallback(useDebounce(updateStore, 500), []);
@@ -43,6 +50,9 @@ const Search: React.FC<Partial<ISearchProps>> = ({
 				`${styles.search__form}`,
 				...className.split(' ').map((cn) => `${styles[cn]}`),
 			].join(' ')}
+			onSubmit={(e) => {
+				e.preventDefault();
+			}}
 		>
 			<input
 				type="text"
@@ -53,7 +63,10 @@ const Search: React.FC<Partial<ISearchProps>> = ({
 			/>
 
 			{filters && (
-				<div className={styles.filter}>
+				<div
+					className={styles.filter}
+					onClick={openFiltersSideBarOnClickEventHandler}
+				>
 					<span />
 				</div>
 			)}

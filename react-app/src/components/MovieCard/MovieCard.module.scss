@@ -1,61 +1,84 @@
-@import '/src/constants/_colors.scss';
-@import '/src/constants/_fonts.scss';
+@import 'constants/_colors.scss';
+@import 'constants/_fonts.scss';
 
+.card__wrap {
+	width: 266px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.card__img {
+	height: 380px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
 
-.card__wrap{
-  width: 266px;
+	img {
+		width: 100%;
+		height: auto;
+	}
 
-  .card__img{
-    width: 100%;
-    height: 357px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
+	.card__rating {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+}
 
-    & img{
-      min-width: 100%;
-      height: 380px;
-    }
+.card__rating {
+	background-color: $_GREEN;
+	font-size: $_16px;
+	width: 37px;
+	padding: 4px 8px;
+	border-radius: 6px;
+	font-weight: 600;
+	text-align: center;
 
-    .card__rating{
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 37px;
-      background-color: $_GREEN;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: $_16px;
-      text-align: center;
-      padding: 4px 8px;
+	&_yellow {
+		background-color: $_YELLOW;
+	}
+	&_orange {
+		background-color: $_ORANGE;
+	}
+}
 
-      &_yellow {
-        background-color: $_YELLOW;
-      }
+.card__discription {
+	display: flex;
+	flex-direction: column;
+}
 
-      &_orange {
-        background-color: $_ORANGE;
-      }
-    }
-  }
-  
-  .card__discription{
-    display: flex;
-    flex-direction: column;
-    
-    .card__title{
-      font-weight: 700;
-      font-size: $_16px;
-      margin-bottom: 6px;
-    }
+.card__title {
+	font-size: $_16px;
+	margin-bottom: 6px;
+	font-weight: 700;
+}
 
-    .card__genre *{
-      font-weight: 500;
-      font-size: $_16px;
-      color: $_LIGHT;
-    }
-  }
+.title {
+	font-size: $_40px;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.card__genre {
+	font-weight: 500;
+	font-size: $_16px;
+	color: $_LIGHT;
+}
+
+.stats {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.stats__item {
+	background-color: $_GRAPHITE;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: $_16px;
+	text-align: center;
+	padding: 4px 8px;
 }

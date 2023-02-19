@@ -1,32 +1,32 @@
-@import '/src/constants/_colors.scss';
-@import '/src/constants/_fonts.scss';
+@import 'constants/_colors.scss';
+@import 'constants/_fonts.scss';
 
-.cardList__coontainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cardList__coontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.cardList__wrap{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
+.cardList__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: center;
 }
 
-.loadMore{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  font-weight: 500;
-  font-size: $_16px;
-  min-width: 160px;
-  max-width: 200px;
-  padding: 12px 24px;
-  margin: 64px 0;
-  background-color: $_GRAPHITE;
-  border-radius: 40px;
-  cursor: pointer;
-  user-select: none;
+.loadMore {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+	font-weight: 500;
+	font-size: $_16px;
+	min-width: 160px;
+	max-width: 200px;
+	padding: 12px 24px;
+	margin: 64px 0;
+	background-color: $_GRAPHITE;
+	border-radius: 40px;
+	cursor: pointer;
+	user-select: none;
 }

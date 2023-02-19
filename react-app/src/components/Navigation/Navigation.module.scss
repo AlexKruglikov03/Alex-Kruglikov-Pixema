@@ -1,0 +1,17 @@
+@import 'constants/_colors.scss';
+@import 'constants/_fonts.scss';
+
+.navigation {
+	background-color: $_BLACK;
+	flex-basis: 368px;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.navigation__wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}

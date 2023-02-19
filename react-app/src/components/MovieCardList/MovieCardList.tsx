@@ -1,15 +1,15 @@
-import styles from '../MovieCardList/MovieCardList.module.scss';
-import MovieCard, { IMovie } from 'components/MovieCard/MovieCard';
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import { useSearchParams } from 'react-router-dom';
+import { IStore } from 'store/store';
 import {
 	fetchMovies,
-	IMoviesQueryParams,
+	IMovieQueryParams,
 	useAppDispatch,
 } from 'appSlices/movie.slice';
-import { useSelector } from 'react-redux';
-import { IStore } from 'store/store';
 import { ReactComponent as Spinner } from 'svg/Spinner.svg';
-import { Link, useParams, useSearchParams } from 'react-router-dom';
+import MovieCard from 'components/MovieCard/MovieCard';
+import styles from './MovieCardList.module.scss';
 
 export interface IMovieCardList {
 	listType: string;
@@ -19,8 +19,6 @@ const MovieCardList: React.FC<IMovieCardList> = ({ listType }) => {
 	const [searchParams] = useSearchParams();
 
 	const [endOfPage, setEndOfPage] = useState(false);
-	const [, updateState] = useState({});
-	const forceUpdate = useCallback(() => updateState({}), []);
 
 	const dispatch = useAppDispatch();
 	const {
@@ -28,13 +26,13 @@ const MovieCardList: React.FC<IMovieCardList> = ({ listType }) => {
 		movies,
 		lastPage,
 		nextPage: page,
+		queries: { sort },
 	} = useSelector((storeState: IStore) => storeState.rootReducer.moviesReducer);
-	const [moviesList, setMoviesList] = useState(movies);
 
-	/*Update page on scroll
+	/* ==Update page on scroll==
 
   const scrollHandler = (e:Event) =>{
-    const target = e.target as HTMLDocument
+    const target = e.target as Document
     if ((target.documentElement.scrollHeight - target.documentElement.scrollTop - window.innerHeight-100<0) && !lastPage) setEndOfPage(!endOfPage)
   }
   useEffect(()=>{
@@ -48,18 +46,29 @@ const MovieCardList: React.FC<IMovieCardList> = ({ listType }) => {
   */
 
 	useEffect(() => {
-		const params = Object.fromEntries(searchParams.entries());
-		let queries: IMoviesQueryParams = {
-			...params,
-			genres: params?.genres?.split(',') ?? [],
+		const {
+			title,
+			country,
+			genres,
+			year_from,
+			year_to,
+			rating_from,
+			rating_to,
+		} = Object.fromEntries(searchParams.entries());
+
+		let queries: IMovieQueryParams = {
+			title,
+			country,
+			genres: genres?.split(',') ?? [],
 			years: {
-				from: +params.year_from || 0,
-				to: +params.year_to || Infinity,
+				from: +year_from || 0,
+				to: +year_to || Infinity,
 			},
 			rating: {
-				from: +params.rating_from || 0,
-				to: +params.rating_to || 10,
+				from: +rating_from || 0,
+				to: +rating_to || 10,
 			},
+			sort,
 		};
 		dispatch(
 			fetchMovies({
@@ -70,14 +79,6 @@ const MovieCardList: React.FC<IMovieCardList> = ({ listType }) => {
 		);
 	}, [endOfPage, searchParams]);
 
-	useEffect(() => {
-		setMoviesList(movies);
-	}, [movies]);
-	useEffect(() => {
-		forceUpdate();
-		console.log('Movies after """rerender""": ', movies);
-	}, [moviesList]);
-
 	return (
 		<div className={styles.cardList__coontainer}>
 			<div className={styles.cardList__wrap}>
@@ -87,7 +88,7 @@ const MovieCardList: React.FC<IMovieCardList> = ({ listType }) => {
 			</div>
 			<div
 				className={styles.loadMore}
-				onClick={(e) => {
+				onClick={() => {
 					if (!lastPage) setEndOfPage(!endOfPage);
 				}}
 			>

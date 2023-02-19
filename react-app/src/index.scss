@@ -1,20 +1,67 @@
-@import 'src/constants/_colors.scss';
-*{
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: 'Exo 2', 'sans-serif';
-  color: $_WHITE;
+@import 'constants/_colors.scss';
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	mix-blend-mode: difference;
+	&-track {
+		border-radius: 10px;
+		background: rgba(127, 127, 127, 0.1);
+	}
+	&-thumb {
+		border-radius: 10px;
+		background: rgba(127, 127, 127, 0.2);
+	}
+	&-thumb:hover {
+		background: rgba(127, 127, 127, 0.4);
+	}
+	&-thumb:active {
+		background: rgba(127, 127, 127, 0.9);
+	}
 }
 
-body{
-  background-color: $_BLACK;
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Exo 2', 'sans-serif';
+	color: $_WHITE;
 }
 
-.container{
-  max-width: 1796px;
-  padding: 0 62px;
-  margin: auto;
+html,
+body,
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+html {
+	min-height: 100vh;
+	overflow: overlay;
+}
+
+body {
+	background-color: $_BLACK;
+}
+
+body,
+#root {
+	flex-grow: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: 1796px;
+	padding: 0 62px;
+	margin: auto;
+}
+
+.centre {
+	display: flex;
+}
+
+.content {
+	flex-grow: 0;
 }

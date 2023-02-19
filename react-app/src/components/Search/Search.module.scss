@@ -1,5 +1,5 @@
-@import '/src/constants/_colors.scss';
-@import '/src/constants/_fonts.scss';
+@import 'constants/_colors.scss';
+@import 'constants/_fonts.scss';
 
 .search__form {
 	width: 1186px;
@@ -9,6 +9,11 @@
 	align-items: center;
 	justify-content: end;
 	margin-right: 40px;
+
+	&__filters {
+		width: 100%;
+		margin-right: 0;
+	}
 
 	.search__input {
 		outline: 0;

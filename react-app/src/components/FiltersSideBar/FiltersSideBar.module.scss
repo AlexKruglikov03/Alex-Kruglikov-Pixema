@@ -1,0 +1,208 @@
+@import 'constants/_colors.scss';
+@import 'constants/_fonts.scss';
+
+.filters__wrap {
+	width: 518px;
+	background-color: $_DARK;
+	position: fixed;
+	padding: 48px 40px 48px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	user-select: none;
+	display: none;
+	flex-direction: column;
+
+	&_open {
+		display: flex;
+	}
+
+	.filters__title {
+		font-weight: 600;
+		font-size: $_24px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 48px;
+
+		.filters__close {
+			display: block;
+			font-size: $_16px;
+			font-weight: 400;
+			cursor: pointer;
+		}
+	}
+
+	.filters__list {
+		flex-grow: 1;
+
+		//Remove arrows from input type='number'
+		input[type='number'] {
+			appearance: textfield;
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+				appearance: none;
+				margin: 0;
+			}
+		}
+
+		.filters__sort {
+			font-weight: 600;
+			padding-bottom: 36px;
+			margin-bottom: 32px;
+			border-bottom: 1px solid $_GRAPHITE;
+
+			.filters__sort__wrap {
+				border: 2px solid $_GRAPHITE;
+				border-radius: 10px;
+				display: flex;
+				font-weight: 500;
+				margin-top: 10px;
+				cursor: pointer;
+
+				& div:hover {
+					color: $_WHITE;
+					transition: 0.3s;
+				}
+
+				.filters__sort__rating {
+					width: 217px;
+					border-right: 2px solid $_GRAPHITE;
+					text-align: center;
+					padding: 14px 0;
+					color: $_SECONDARY;
+				}
+
+				.filters__sort__year {
+					width: 217px;
+					text-align: center;
+					padding: 14px 0;
+					color: $_SECONDARY;
+				}
+
+				.filters__sort__item_active {
+					background-color: $_GRAPHITE;
+					color: $_WHITE;
+					transition: 0.3s;
+				}
+			}
+		}
+
+		.filters__items {
+			.filters__item {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 24px;
+
+				.filters__item__title {
+					margin-bottom: 10px;
+					font-weight: 600;
+				}
+
+				.filters__item__wrap {
+					display: flex;
+					justify-content: space-between;
+					gap: 15px;
+
+					& input {
+						outline: 0;
+						width: 200px;
+						padding: 16px 0 16px 20px;
+						border-radius: 10px;
+						border: 2px solid $_GRAPHITE;
+						font-weight: 500;
+						font-size: $_16px;
+						background-color: $_GRAPHITE;
+						color: $_SECONDARY;
+
+						&:focus {
+							color: $_WHITE;
+							border: 2px solid $_PRIMARY;
+						}
+						&:active {
+							color: $_WHITE;
+						}
+					}
+				}
+
+				.filters__genres__wrap {
+					width: 100%;
+					background-color: $_GRAPHITE;
+					padding: 16px 20px;
+					border-radius: 10px;
+					display: flex;
+					gap: 15px;
+					flex-wrap: wrap;
+					justify-content: center;
+
+					.filters__genre__label {
+						display: block;
+						padding: 5px;
+						border: 2px solid $_SECONDARY;
+						border-radius: 10px;
+						transition: 0.3s;
+
+						&_active {
+							background-color: $_PRIMARY;
+							transition: 0.3s;
+							border: 2px solid $_PRIMARY;
+						}
+					}
+
+					.filters__genre__item {
+						position: absolute;
+						z-index: -1;
+						opacity: 0;
+					}
+				}
+			}
+
+			& select {
+				position: relative;
+				appearance: none;
+				outline: 0;
+				padding: 16px 0 16px 20px;
+				border-radius: 10px;
+				border: 2px solid $_GRAPHITE;
+				font-weight: 500;
+				font-size: $_16px;
+				background-color: $_GRAPHITE;
+				color: $_SECONDARY;
+				cursor: pointer;
+
+				&::after {
+					content: '';
+					width: 0.8em;
+					height: 0.5em;
+					background-color: var(--select-arrow);
+					clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+				}
+			}
+		}
+	}
+
+	.filters__button {
+		display: flex;
+		justify-content: space-between;
+
+		& * {
+			width: 199px;
+			padding: 17px 0;
+			text-align: center;
+			background-color: $_GRAPHITE;
+			cursor: pointer;
+			border: none;
+			border-radius: 10px;
+			font-weight: 600;
+			font-size: $_16px;
+		}
+
+		.filters__button__submit {
+			background-color: $_PRIMARY;
+
+			&:hover {
+				background-color: $_PRIMARY2;
+				transition: 0.3s;
+			}
+		}
+	}
+}

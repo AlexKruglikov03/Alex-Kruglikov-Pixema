@@ -219,44 +219,49 @@
 
 		{
 			"id": 11,
-			"title": "Wonder Woman 1984",
-			"genre": ["Advinture", "Action", "Fantasy"],
-			"IMDB": 7.6,
-			"length": "130 min",
-			"discription": "In 1984, after saving the world in Wonder Woman (2017), the immortal Amazon warrior, Princess Diana of Themyscira, finds herself trying to stay under the radar, working as an archaeologist at the Smithsonian Museum. With the memory of the brave U.S. pilot, Captain Steve Trevor, etched on her mind, Diana Prince becomes embroiled in a sinister conspiracy of global proportions when a transparent, golden-yellow citrine gemstone catches the eye of the power-hungry entrepreneur, Maxwell Lord.",
-			"year": 2011,
-			"released": "15 Jul 2011",
-			"boxOffice": "$200,000,000",
-			"country": ["United Kingdom", "United States"],
-			"poduction": ["Heyday Films", "Moving Picture Company", "Warner Bros."],
-			"actors": ["Gal Gadot", "Chris Pine", "Pedro Pascal", "Robin Wright"],
-			"director": "Patty Jenkins",
-			"writers": ["Patty Jenkins", "Geoff Johns"],
-			"img": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/03/IMG_3648.jpeg"
+			"title": "The Lion King",
+			"genre": ["Advinture", "Drama", "Fantasy"],
+			"IMDB": 8.1,
+			"length": "118 min",
+			"discription": "A lion cub named Simba is supposed to be inherited from an existing cub father, Mufasa. But Uncle Scar kills the ruler, his brother, and usurps the throne, Simba goes into exile, you remain in the death of a parent. The king, living in disgrace, thinks he has found a simpler life with his beloved friends, Pumbaa the warthog and Timon the meerkat. But old debts come back to haunt when a childhood friend Finds Simba, reminds her of her destiny and writes for the land where the animals live. Can a young prince become a just ruler?",
+			"year": 2019,
+			"released": "19 Jul 2019",
+			"boxOffice": "$260,000,000",
+			"country": ["United States"],
+			"poduction": ["Walt Disney Studios", "Motion Pictures"],
+			"actors": [
+				"Donald Glover",
+				"Seth Rogen",
+				"Chiwetel Ejiofor",
+				"John Oliver"
+			],
+			"director": "Jon Favreau",
+			"writers": ["Jon Favreau", "Jeffrey Silver", "Karen Gilchrist"],
+			"img": "https://i.pinimg.com/564x/41/bf/b5/41bfb5f2126c5187acc30715d8eeec64.jpg"
 		},
 
 		{
 			"id": 12,
-			"title": "Star Wars: The Rise of Skywalker",
+			"title": "Harry Potter and the Philosopher's stone",
 			"genre": ["Action", "Fantasy", "Fiction"],
-			"IMDB": 8.2,
-			"length": "142 min",
+			"IMDB": 8.4,
+			"length": "152 min",
 			"discription": "The history of the Skywalker family is rapidly approaching the finale. These people did a lot for their people, entered into open confrontation with the enemy and tried to protect the Universe from insidious invaders, but now the place of defenders will have to be replaced by other, younger and braver characters who are ready to perform heroic deeds. A young girl named Rey decided to continue the dangerous and responsible mission of the fearless Luke. He gave her many instructions before leaving, and these greatly facilitated her path of ascent. The girl was able to become a unique Jedi, discovered a lot of new abilities in herself, and only she is able to influence the outcome of the battle.",
-			"year": 2019,
-			"released": "20 Dec 2019",
-			"boxOffice": "$275,000,000",
-			"country": ["United States"],
+			"year": 2001,
+			"released": "10 Nov 2001",
+			"boxOffice": "$175,000,000",
+			"country": ["United States", "United Kingdom"],
 			"poduction": ["Walt Disney Studios", "Motion Pictures"],
 			"actors": [
-				"Carrie Fisher",
+				"Daniel Radcliffe",
 				"Mark Hamill",
 				"Adam Driver",
 				"Daisy Ridley",
 				"Anthony Daniels"
 			],
-			"director": "J. J. Abrams",
-			"writers": ["J. J. Abrams", "Derek Connolly", "Chris Terrio"],
-			"img": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2021/08/IMG_2893-scaled.jpeg"
+			"director": "Chris Columbus",
+			"writers": ["David Heyman", "Chris Columbus"],
+			"img": "https://i.pinimg.com/564x/31/21/53/3121534a54680876fbc01b9c16240fd1.jpg"
 		},
 
 		{

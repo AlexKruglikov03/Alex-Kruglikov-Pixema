@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './MovieCard.module.scss';
 
 export interface IMovie {
@@ -24,10 +25,10 @@ interface IMovieCard {
 }
 
 const MovieCard: React.FC<IMovieCard> = ({
-	movie: { title, genre, IMDB, img },
+	movie: { title, genre, IMDB, img, id },
 }) => {
 	return (
-		<div className={styles.card__wrap}>
+		<Link to={`../movie/${id}`} className={styles.card__wrap}>
 			<div className={styles.card__img}>
 				<img src={img} alt={`«${title}» poster`} />
 				<div
@@ -53,7 +54,7 @@ const MovieCard: React.FC<IMovieCard> = ({
 					))}
 				</span>
 			</div>
-		</div>
+		</Link>
 	);
 };
 

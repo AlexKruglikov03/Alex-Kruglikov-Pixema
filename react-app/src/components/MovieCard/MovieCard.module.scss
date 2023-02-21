@@ -5,8 +5,19 @@
 	width: 266px;
 	cursor: pointer;
 	border-radius: 20px;
+	color: $_WHITE;
+
+	&:hover {
+		color: $_WHITE;
+	}
+
+	&:hover .card__title {
+		color: $_PRIMARY;
+		transition: 0.3s;
+	}
 }
 .card__img {
+	max-width: 266px;
 	height: 380px;
 	display: flex;
 	align-items: center;
@@ -81,4 +92,53 @@
 	font-size: $_16px;
 	text-align: center;
 	padding: 4px 8px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+//Movie info
+
+.info__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 40px 20px;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+
+	&_left {
+		flex-shrink: 0;
+		flex-grow: 0;
+		flex-basis: 240px;
+	}
+
+	&_right {
+		flex-grow: 1;
+		gap: 20px;
+	}
+}
+
+// .side__buttons {
+// 	display: flex;
+// 	.side__button {
+// 	}
+// }
+
+.meta {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.meta__item {
+		display: flex;
+		&::before {
+			content: attr(title);
+			flex-basis: 100px;
+			flex-shrink: 0;
+			color: $_LIGHT;
+		}
+	}
 }

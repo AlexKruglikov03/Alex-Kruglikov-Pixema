@@ -132,6 +132,15 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			&:hover,
+			&:hover * {
+				color: $_SECONDARY;
+			}
+
+			.user__link {
+				color: inherit;
+				transition: inherit;
+			}
 
 			.user__logo {
 				width: 56px;

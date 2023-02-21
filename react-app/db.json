@@ -266,7 +266,7 @@
 
 		{
 			"id": 13,
-			"title": "Aquaman",
+			"title": "Spider Man: No way home",
 			"genre": ["Advinture", "Action", "Fantasy"],
 			"IMDB": 7.6,
 			"length": "143 min",
@@ -284,12 +284,12 @@
 			],
 			"director": "James Wan",
 			"writers": ["James Wan", "Geoff Johns"],
-			"img": "https://media.comicbook.com/2018/07/aqamn-vert-tsr-dom-2764x4096-r01-master-1122913.jpeg"
+			"img": "https://i.pinimg.com/564x/be/38/a6/be38a6e6e694f52d2b058cd18e2c2692.jpg"
 		},
 
 		{
 			"id": 14,
-			"title": "The Joker",
+			"title": "Look stock & two smoking barrels",
 			"genre": ["Crime", "Thriller", "Drama"],
 			"IMDB": 8.0,
 			"length": "122 min",
@@ -307,12 +307,12 @@
 			],
 			"director": "Todd Phillips",
 			"writers": ["Todd Phillips", "Bradley Cooper", "Emma Tillinger Koskoff"],
-			"img": "https://coconuts.co/wp-content/uploads/2019/11/01_joker.jpg"
+			"img": "https://i.pinimg.com/564x/d8/f7/78/d8f7788ea829471b3e64d1cf49fd11f7.jpg"
 		},
 
 		{
 			"id": 15,
-			"title": "Bumblebee",
+			"title": "Fight club",
 			"genre": ["Advinture", "Fantasy", "Action"],
 			"IMDB": 7.6,
 			"length": "114 min",
@@ -325,12 +325,12 @@
 			"actors": ["Hailee Steinfeld", "John Cena", "John Ortiz"],
 			"director": "Travis Knight",
 			"writers": ["Michael Bay", "Mark Vahradian", "Tom DeSanto"],
-			"img": "https://i.pinimg.com/originals/05/00/ae/0500aeb27ff406127a50a15d6d7bbf56.jpg"
+			"img": "https://i.pinimg.com/564x/2d/a8/54/2da8543e2914bd755265b3582d3d1e47.jpg"
 		},
 
 		{
 			"id": 16,
-			"title": "Aladdin",
+			"title": "The Gentlemen",
 			"genre": ["Action", "Fantasy", "Fiction"],
 			"IMDB": 7.6,
 			"length": "128 min",
@@ -343,12 +343,12 @@
 			"actors": ["Will Smith", "Mena Massoud", "Naomi Scott"],
 			"director": "Guy Ritchie",
 			"writers": ["Dan Lin", "Jonathan Eirich"],
-			"img": "https://i.pinimg.com/originals/0f/2d/e8/0f2de8abd7453f5f462026912afbac20.jpg"
+			"img": "https://i.pinimg.com/564x/31/d4/bd/31d4bd32a4ce070e5092d1f786b33376.jpg"
 		},
 
 		{
 			"id": 17,
-			"title": "Jurassic World",
+			"title": "The Green Mile",
 			"genre": ["Advinture", "Action", "Fantasy"],
 			"IMDB": 7.5,
 			"length": "124 min",
@@ -370,12 +370,12 @@
 			],
 			"director": "Colin Trevorrow",
 			"writers": ["Colin Trevorrow", "Rick Jaffa"],
-			"img": "https://i.pinimg.com/originals/94/0d/72/940d72746e330addf615a9d7ca9ba445.jpg"
+			"img": "https://i.pinimg.com/564x/9c/b4/27/9cb4277a0c5083ae7a05600ca582cad3.jpg"
 		},
 
 		{
 			"id": 18,
-			"title": "The Witches",
+			"title": "Jhon Wick: Chapter 2",
 			"genre": ["Comedy", "Family", "Mystery"],
 			"IMDB": 5.8,
 			"length": "104 min",
@@ -388,12 +388,12 @@
 			"actors": ["Anne Hathaway", "Octavia Spencer", "Stanley Tucci"],
 			"director": "Robert Zemeckis",
 			"writers": ["Robert Zemeckis", "Kenya Barris"],
-			"img": "https://www.momdoesreviews.com/wp-content/uploads/2020/10/TW-POSTER-scaled-e1603379046733.jpg"
+			"img": "https://i.pinimg.com/564x/24/f8/d8/24f8d83809178677cfd87574d1184f7f.jpg"
 		},
 
 		{
 			"id": 19,
-			"title": "Dolittle",
+			"title": "Hardcore Henry",
 			"genre": ["Advinture", "Comedy", "Fantasy"],
 			"IMDB": 7.8,
 			"length": "101 min",
@@ -411,12 +411,12 @@
 			],
 			"director": "Stephen Gaghan",
 			"writers": ["Stephen Gaghan", "Dan Gregor", "Doug Mand"],
-			"img": "https://i.pinimg.com/originals/cb/98/cb/cb98cb28d6f1746c02fd42e59a42f28d.jpg"
+			"img": "https://i.pinimg.com/564x/a0/bd/01/a0bd01ada6d8d820f6b0777ca0e182a3.jpg"
 		},
 
 		{
 			"id": 20,
-			"title": "Avengers: Endgame",
+			"title": "Gladiator",
 			"genre": ["Advinture", "Fantasy", "Action"],
 			"IMDB": 4.2,
 			"length": "181 min",
@@ -436,12 +436,12 @@
 			],
 			"director": "Anthony Russo",
 			"writers": ["Christopher Markus", "Stephan McFeely"],
-			"img": "https://i.pinimg.com/originals/ec/2e/a6/ec2ea6a0fe722102cf65575f0f44b631.jpg"
+			"img": "https://i.pinimg.com/564x/b8/45/5d/b8455d1bd52d5c9ea7c014f2513ef1af.jpg"
 		},
 
 		{
 			"id": 21,
-			"title": "Bumblebee",
+			"title": "Venom",
 			"genre": ["Advinture", "Fantasy", "Action"],
 			"IMDB": 7.6,
 			"length": "114 min",
@@ -454,12 +454,12 @@
 			"actors": ["Hailee Steinfeld", "John Cena", "John Ortiz"],
 			"director": "Travis Knight",
 			"writers": ["Michael Bay", "Mark Vahradian", "Tom DeSanto"],
-			"img": "https://i.pinimg.com/originals/05/00/ae/0500aeb27ff406127a50a15d6d7bbf56.jpg"
+			"img": "https://i.pinimg.com/564x/cb/c5/ca/cbc5ca402e8c6fb308a9745a1dd6c3d0.jpg"
 		},
 
 		{
 			"id": 22,
-			"title": "Aladdin",
+			"title": "Interstellar",
 			"genre": ["Action", "Fantasy", "Fiction"],
 			"IMDB": 7.6,
 			"length": "128 min",
@@ -472,14 +472,14 @@
 			"actors": ["Will Smith", "Mena Massoud", "Naomi Scott"],
 			"director": "Guy Ritchie",
 			"writers": ["Dan Lin", "Jonathan Eirich"],
-			"img": "https://i.pinimg.com/originals/0f/2d/e8/0f2de8abd7453f5f462026912afbac20.jpg"
+			"img": "https://i.pinimg.com/564x/d2/70/89/d270896d9bfbc63513d1090224070e8b.jpg"
 		},
 
 		{
 			"id": 23,
-			"title": "Jurassic World",
+			"title": "Deadpool",
 			"genre": ["Advinture", "Action", "Fantasy"],
-			"IMDB": 7.5,
+			"IMDB": 5.5,
 			"length": "124 min",
 			"discription": "Before leaving the world, the famous John Hammond left his scientific pride to one famous millionaire, Simon Masrani, who was passionate about everything related to science. Having become the full owner of the park with dinosaurs, the new owner divided it into two parts. Wild species lived in the first, and trained and domesticated reptiles lived in the second, which were the main attraction of the entertainment center for children and adults. But, as time went on, interest in prehistoric creatures fell, and the park ceased to bring financial profit to the businessman, which prompted Simon to artificially bring out a new exhibit - the most dangerous and bloodthirsty dinosaur Indominius Rex.",
 			"year": 2015,
@@ -499,14 +499,14 @@
 			],
 			"director": "Colin Trevorrow",
 			"writers": ["Colin Trevorrow", "Rick Jaffa"],
-			"img": "https://i.pinimg.com/originals/94/0d/72/940d72746e330addf615a9d7ca9ba445.jpg"
+			"img": "https://i.pinimg.com/564x/d6/85/3c/d6853c7c245056b36f511c9da833b500.jpg"
 		},
 
 		{
 			"id": 24,
-			"title": "The Witches",
+			"title": "The Grand Budapest Hotel",
 			"genre": ["Comedy", "Family", "Mystery"],
-			"IMDB": 5.8,
+			"IMDB": 7.8,
 			"length": "104 min",
 			"discription": "Witches exist. They are among people, carefully disguised. Distinguished by diabolical cunning, cunning and meanness, these evil creatures also madly hate children. In 1960, a witch meeting takes place in one of the resorts in Alabama. The Supreme Witch creates a witchcraft potion, after drinking which a person becomes an irreversible mouse. She longs to cleanse the earth from the children she hates, so she develops an insidious plan: mix this drug into sweets that kids love so much and distribute them to all the kids. But a little boy accidentally learns about her plans. Together with his energetic grandmother and new friends, he blocks the way for evil and deceit.",
 			"year": 2020,
@@ -517,12 +517,12 @@
 			"actors": ["Anne Hathaway", "Octavia Spencer", "Stanley Tucci"],
 			"director": "Robert Zemeckis",
 			"writers": ["Robert Zemeckis", "Kenya Barris"],
-			"img": "https://www.momdoesreviews.com/wp-content/uploads/2020/10/TW-POSTER-scaled-e1603379046733.jpg"
+			"img": "https://i.pinimg.com/564x/e3/a3/b7/e3a3b7b016c87d7bfcf879d743322229.jpg"
 		},
 
 		{
 			"id": 25,
-			"title": "Dolittle",
+			"title": "The Hobbit",
 			"genre": ["Advinture", "Comedy", "Fantasy"],
 			"IMDB": 7.8,
 			"length": "101 min",
@@ -540,32 +540,7 @@
 			],
 			"director": "Stephen Gaghan",
 			"writers": ["Stephen Gaghan", "Dan Gregor", "Doug Mand"],
-			"img": "https://i.pinimg.com/originals/cb/98/cb/cb98cb28d6f1746c02fd42e59a42f28d.jpg"
-		},
-
-		{
-			"id": 26,
-			"title": "Avengers: Endgame",
-			"genre": ["Advinture", "Fantasy", "Action"],
-			"IMDB": 4.2,
-			"length": "181 min",
-			"discription": "The incredible power of Thanos, destroying everything in its path, began to incinerate the resources of the Earth. Initially, the antagonist set a specific goal and practically achieved it, because half of all life on the planet was defeated, and the survivors are now waiting for the inevitable moment when they die. The moment has come when the only and decisive battle is able to stop the villain or destroy the chances of mankind for survival. A brave team of Avengers must gather for a fierce battle.",
-			"year": 2019,
-			"released": "26 Apr 2019",
-			"boxOffice": "$400,000,000",
-			"country": ["United States"],
-			"poduction": ["Marvel Studios", "Walt Disney Studios"],
-			"actors": [
-				"Robert Downey Jr.",
-				"Chris Evans",
-				"Mark Ruffalo",
-				"Chris Hemsworth",
-				"Scarlett Johansson",
-				"Paul Rudd"
-			],
-			"director": "Anthony Russo",
-			"writers": ["Christopher Markus", "Stephan McFeely"],
-			"img": "https://i.pinimg.com/originals/ec/2e/a6/ec2ea6a0fe722102cf65575f0f44b631.jpg"
+			"img": "https://i.pinimg.com/564x/76/9f/51/769f51d079c66c1a9317b6f5df4859b5.jpg"
 		}
 	]
 }

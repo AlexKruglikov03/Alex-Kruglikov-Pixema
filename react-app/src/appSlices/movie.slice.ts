@@ -3,6 +3,9 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { AppDispatch } from 'store/store';
 import { IMovie } from 'components/MovieCard/MovieCard';
 
+import { history } from 'utils/history';
+import { useLocation } from 'react-router';
+
 interface IRange {
 	from: number;
 	to: number;
@@ -129,6 +132,8 @@ const movieSlice = createSlice({
 					},
 				},
 			) => {
+				if (/^\/movie\//i.test(globalThis.location.pathname))
+					history.replace('/');
 				return {
 					...state,
 					queries: { ...state.queries, ...queries },

@@ -26,9 +26,13 @@ const Header = () => {
 							<User />
 						</div>
 						{username ? (
-							<Link to={`../user/${id}`}>{username}</Link>
+							<Link to={`../user/${id}`} className={styles.user__link}>
+								{username}
+							</Link>
 						) : (
-							<Link to="../signin">Sign In</Link>
+							<Link to="../signin" className={styles.user__link}>
+								Sign In
+							</Link>
 						)}
 					</div>
 					<ArrowRight />

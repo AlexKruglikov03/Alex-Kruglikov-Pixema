@@ -5,7 +5,7 @@ import FiltersSideBar from 'components/FiltersSideBar/FiltersSideBar';
 
 const PageLayout = () => {
 	return (
-		<>
+		<div className="content-wrap">
 			<Header />
 			<div className="centre">
 				<Navigation />
@@ -14,7 +14,7 @@ const PageLayout = () => {
 				</div>
 			</div>
 			<FiltersSideBar />
-		</>
+		</div>
 	);
 };
 

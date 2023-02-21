@@ -4,11 +4,9 @@ import { useAppDispatch } from 'appSlices/movie.slice';
 import { getToken, getUserData } from 'appSlices/user.slice';
 import { useSelector } from 'react-redux';
 import { IStore } from 'store/store';
-import { useLocation } from 'react-router';
 import { history } from 'utils/history';
 
 const SignInForm = () => {
-	const location = useLocation();
 	const dispatch = useAppDispatch();
 	const { user, token } = useSelector(
 		(state: IStore) => state?.rootReducer?.userReducer,

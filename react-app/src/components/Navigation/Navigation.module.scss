@@ -3,7 +3,7 @@
 
 .navigation {
 	background-color: $_BLACK;
-	flex-basis: 368px;
+	flex-basis: 310px;
 	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
@@ -14,4 +14,20 @@
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
+
+	& li a {
+		display: flex;
+		gap: 25px;
+		font-weight: 600;
+		font-size: $_18px;
+		user-select: none;
+		cursor: pointer;
+
+		&:hover,
+		&:hover * {
+			color: $_PRIMARY;
+			fill: $_PRIMARY;
+			transition: 0.3s;
+		}
+	}
 }

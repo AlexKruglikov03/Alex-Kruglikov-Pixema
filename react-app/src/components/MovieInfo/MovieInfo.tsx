@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { IStore } from 'store/store';
 import { fetchMovie, useAppDispatch } from 'appSlices/movie.slice';
 import { ReactComponent as Spinner } from 'svg/Spinner.svg';
+import { ReactComponent as IMBDLogo } from 'svg/Imdb.svg';
 import styles from 'components/MovieCard/MovieCard.module.scss';
 
 interface MovieInfoProps {
@@ -47,7 +48,7 @@ const MovieInfo: FC<MovieInfoProps> = ({ id }) => {
 				<Spinner />
 			) : (
 				(
-					<div className={styles.info__wrapper}>
+					<div className={styles.info__wrap}>
 						<div className={[styles.section, styles.section_left].join(' ')}>
 							<div className={styles.card__img}>
 								<img src={img} alt={`«${title}» poster`} />
@@ -58,7 +59,7 @@ const MovieInfo: FC<MovieInfoProps> = ({ id }) => {
 								)}
 							</div>
 						</div>
-						<div className="section section_right">
+						<div className={[styles.section, styles.section_right].join(' ')}>
 							<div className={styles.card__genre}>
 								{genre?.map((genre, index) => (
 									<span className={styles.genre__item} key={genre}>
@@ -80,18 +81,38 @@ const MovieInfo: FC<MovieInfoProps> = ({ id }) => {
 								>
 									{IMDB?.toFixed(1)}
 								</span>
+								<span className={styles.stats__item}>
+									<IMBDLogo />
+									{IMDB}
+								</span>
 								<span className={styles.stats__item}>{length}</span>
 							</div>
 							<div>{discription}</div>
-							<div className="meta">
-								<div>{year}</div>
-								<div>{released}</div>
-								<div>{boxOffice}</div>
-								<div>{country?.join(', ')}</div>
-								<div>{poduction}</div>
-								<div>{actors?.join(', ')}</div>
-								<div>{director}</div>
-								<div>{writers?.join(', ')}</div>
+							<div className={styles.meta}>
+								<div className={styles.meta__item} title="Year">
+									{year}
+								</div>
+								<div className={styles.meta__item} title="Released">
+									{released}
+								</div>
+								<div className={styles.meta__item} title="BoxOffice">
+									{boxOffice}
+								</div>
+								<div className={styles.meta__item} title="Country">
+									{country?.join(', ')}
+								</div>
+								<div className={styles.meta__item} title="Poduction">
+									{poduction}
+								</div>
+								<div className={styles.meta__item} title="Actors">
+									{actors?.join(', ')}
+								</div>
+								<div className={styles.meta__item} title="Director">
+									{director}
+								</div>
+								<div className={styles.meta__item} title="Writers">
+									{writers?.join(', ')}
+								</div>
 							</div>
 						</div>
 					</div>

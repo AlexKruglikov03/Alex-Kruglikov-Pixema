@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import { IStore } from 'store/store';
 import {
+	clearStore,
 	fetchMovies,
 	IMovieQueryParams,
 	useAppDispatch,
@@ -78,6 +79,13 @@ const MovieCardList: React.FC<IMovieCardList> = ({ listType }) => {
 			}),
 		);
 	}, [endOfPage, searchParams]);
+
+	useEffect(
+		() => () => {
+			dispatch(clearStore());
+		},
+		[],
+	);
 
 	return (
 		<div className={styles.cardList__coontainer}>

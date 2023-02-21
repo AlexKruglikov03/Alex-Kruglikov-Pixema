@@ -27,7 +27,6 @@
 	list-style: none;
 	box-sizing: border-box;
 	font-family: 'Exo 2', 'sans-serif';
-	color: $_WHITE;
 }
 
 html,
@@ -40,26 +39,42 @@ body,
 html {
 	min-height: 100vh;
 	overflow: overlay;
+	font-family: 'Exo 2', 'sans-serif';
+	color: $_WHITE;
 }
 
 body {
 	background-color: $_BLACK;
 }
 
-body,
-#root {
-	flex-grow: 1;
+a {
+	color: $_WHITE;
+	&:hover {
+		color: $_PRIMARY;
+	}
 }
 
-.container {
+body,
+#root,
+.container,
+.content-wrap {
+	flex-grow: 1;
+	min-height: 100vh;
+}
+
+.container,
+.content-wrap {
 	width: 100%;
 	max-width: 1796px;
 	padding: 0 62px;
 	margin: auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .centre {
 	display: flex;
+	flex-grow: 1;
 }
 
 .content {
